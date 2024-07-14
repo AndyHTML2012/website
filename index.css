@@ -1,0 +1,48 @@
+@media print
+{
+  .noprint
+  {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark)
+{
+  :root {
+    color-scheme: dark;
+  }
+
+  h1{
+    background-color:antiquewhite;
+    color:black;
+    border-style:solid;
+    border-color:grey;
+    padding: 5px;
+  }
+}
+
+h1{
+  background-color:antiquewhite;
+  border-style:solid;
+  border-color:black;
+  padding: 5px;
+}
+
+div.centerList{
+  text-align: center;
+}
+
+ul.centerUL{
+  display: inline-block;
+  text-align: left;
+}
+
+footer{
+  /* background-color:antiquewhite; */
+  /* position: fixed; */
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  border-color:black;
+  opacity: 50%;
+}
