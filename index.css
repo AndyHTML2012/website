@@ -1,48 +1,101 @@
-@media print
-{
-  .noprint
-  {
+@media print {
+  .noprint {
     display: none;
   }
+
+  div.flex-container>div {
+    border: solid white !important;
+    padding: none;
+    padding-top: none;
+  }
+
+  div.flex-container {
+    gap: none;
+  }
+
 }
 
-@media (prefers-color-scheme: dark)
-{
+@media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
   }
 
-  h1{
-    background-color:antiquewhite;
-    color:black;
-    border-style:solid;
-    border-color:grey;
+  h1 {
+    background-color: antiquewhite;
+    color: black;
+    border-style: solid;
+    border-color: grey;
+    padding: 5px;
+  }
+
+  h2.h25 {
+    background-color: lightcyan;
+    color: black;
+    border-style: solid;
+    border-color: grey;
     padding: 5px;
   }
 }
 
-h1{
-  background-color:antiquewhite;
-  border-style:solid;
-  border-color:black;
+@media (min-width: 768px) {
+
+  div.flex-container {
+    display: flex;
+    grid-template-columns: auto auto 0 2;
+  }
+
+}
+
+h1 {
+  background-color: antiquewhite;
+  border-style: solid;
+  border-color: black;
   padding: 5px;
 }
 
-div.centerList{
+h2.h25 {
+  background-color: lightcyan;
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+}
+
+/***** for resume text section *****/
+
+div.flex-container {
+  display: flexbox;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  align-content: center;
+}
+
+div.flex-container>div {
+  padding: 10px;
+  padding-top: 0px;
+  border-style: ridge;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: fill;
+  flex-grow: 1;
+}
+
+/***** for resume text section *****/
+
+div.centerList {
   text-align: center;
 }
 
-ul.centerUL{
+ul.centerUL {
   display: inline-block;
   text-align: left;
 }
 
-footer{
+footer {
   /* background-color:antiquewhite; */
   /* position: fixed; */
   bottom: 0px;
   width: 100%;
   text-align: center;
-  border-color:black;
+  border-color: black;
   opacity: 50%;
 }
