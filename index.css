@@ -60,6 +60,10 @@ h2.h25 {
   padding: 5px;
 }
 
+ul > li{
+  margin-bottom: 5px;
+}
+
 /***** for resume text section *****/
 
 div.flex-container {
