@@ -15,26 +15,18 @@
 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
+:root {
+  color-scheme: dark;
+}
 
-  h1 {
-    background-color: antiquewhite;
-    color: black;
-    border-style: solid;
-    border-color: grey;
-    padding: 5px;
-  }
+p, li, a, span, h2 {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1), -1px -1px 4px rgba(0, 0, 0, 1);
+}
 
-  h2.h25 {
-    background-color: lightcyan;
-    color: black;
-    border-style: solid;
-    border-color: grey;
-    padding: 5px;
-  }
+/* h2.h25 should NOT have shadow */
+h2.h25 {
+  text-shadow: none;
 }
 
 @media (min-width: 768px) {
@@ -48,15 +40,17 @@
 
 h1 {
   background-color: antiquewhite;
+  color: black;
   border-style: solid;
-  border-color: black;
+  border-color: grey;
   padding: 5px;
 }
 
 h2.h25 {
   background-color: lightcyan;
+  color: black;
   border-style: solid;
-  border-color: black;
+  border-color: grey;
   padding: 5px;
 }
 
@@ -80,7 +74,7 @@ div.flex-container>div {
   margin-left: auto;
   margin-right: auto;
   object-fit: fill;
-  flex-grow: 1;
+  flex: 1;
 }
 
 /***** for resume text section *****/
@@ -94,6 +88,25 @@ ul.centerUL {
   text-align: left;
 }
 
+.social-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.social-container a {
+  text-decoration: none;
+}
+
+.social-container img {
+  display: block;
+  margin: 0 auto 8px auto;
+  width: 48px;
+  height: 48px;
+}
+
 footer {
   /* background-color:antiquewhite; */
   /* position: fixed; */
@@ -102,4 +115,9 @@ footer {
   text-align: center;
   border-color: black;
   opacity: 50%;
+}
+
+img.imgpix {
+  image-rendering: pixelated; /* Works in Chrome, Edge, and Safari */
+  image-rendering: crisp-edges; /* Standard value for Firefox */
 }

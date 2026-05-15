@@ -9,30 +9,59 @@
   <link rel="icon" type="image/x-png" href="webpage_icon.png">
 </head>
 
+<body background="resources/bluetile.png">
+
 <body>
   <center>
     <h1>Projects</h1>
   </center>
 
-  <div class="noprint">
-    <hr>
-    <center><a href="index.html">Home</a> • <a href="projects.html">Projects</a>
-    </center>
-    <hr>
-  </div>
+  <div id="navbar-placeholder"></div>
+  <script src="scripts/navbar.js"></script>
 
   <center>
-    <h2>Current Projects</h2>
-    <p>This page is under construction. For now check out my socials to see other projects I have worked on.</p>
+    <h2>Current & Past Projects</h2>
   </center>
 
-  <hr>
+  <div class="flex-container">
+    <div>
+      <h2 class="h25">Idol On Duty</h2>
+      <ul>
+        <li><b>Gameplay & Technical Programmer | Producer (Aug 2025 – Present)</b></li>
+        <li>3D Third-Person Beat-Em-Up Platformer - Unreal Engine 5.4</li>
+        <li>Assumed Producer role of under-performing team mid-development to stabilize the project roadmap, oversee task management, and lead team meetings.</li>
+        <li>Successfully architected automated build and development workflows using PowerShell and batch scripts.</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h2 class="h25">Hockey Stop</h2>
+      <ul>
+        <li><b>Gameplay & Technical Programmer | Deployment Operations (Aug 2024 - April 2025)</b></li>
+        <li>2D Action Platformer - C++ Custom Engine</li>
+        <li>Engineered a custom text rendering system with full UTF-8 support.</li>
+        <li>Automated deployment pipelines via GitHub Actions, integrating automated build tests, & versioning to reduce wait times by 30%.</li>
+        <li>Implemented native Tiled Map Editor support into the engine.</li>
+        <li>Architected a recursive node-tree serialization system, enabling flexible object and scene persistence.</li>
+        <li>Developed cross platform CMake configuration for Windows, Linux, & Mac.</li>
+        <li>Created automation scripts to integrate the toolchain with GitHub Actions.</li>
+      </ul>
+    </div>
 
-  <footer class="footer">
-    <center>
-      <p>Copyright © Andres Trujillo 2024</p>
-    </center>
-  </footer>
+    <!-- <div>
+      <h2 class="h25">Serialization System & Deployment Toolchain</h2>
+      <ul>
+        <li><b>Aug 2024 – May 2025</b></li>
+        <li>2D Custom C++ Engine</li>
+        <li>Architected a recursive node-tree serialization system, enabling flexible object and scene persistence.</li>
+        <li>Developed cross platform CMake configuration for Windows, Linux, & Mac.</li>
+        <li>Created automation scripts to integrate the toolchain with GitHub Actions.</li>
+      </ul>
+    </div> -->
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script src="scripts/footer.js"></script>
 
 </body>
 
