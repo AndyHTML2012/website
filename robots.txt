@@ -32,4 +32,4 @@ User-agent: Baiduspider
 Disallow: /
 
 User-agent: *
-Disallow: /
+Disallow: /AndresTrujillo_Resume.pdf

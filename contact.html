@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <title>Andres ~ Contact</title>
+  <link rel="icon" type="image/x-png" href="webpage_icon.png">
+</head>
+<body background="resources/bluetile.png">
+
+  <center>
+    <h1>Contact Me</h1>
+  </center>
+
+  <div id="navbar-placeholder"></div>
+  <script src="scripts/navbar.js"></script>
+
+  <center>
+    <h2>Send a Message</h2>
+    <form action="https://formspree.io/f/xbgdredv" method="POST" style="background-color: lightcyan; border: solid grey; padding: 20px; display: inline-block;">
+      <label style="color: black; text-shadow: none;"><b>Name:</b></label><br>
+      <input type="text" name="name" required style="margin-bottom: 10px;"><br>
+      
+      <label style="color: black; text-shadow: none;"><b>Email:</b></label><br>
+      <input type="email" name="email" required style="margin-bottom: 10px;"><br>
+      
+      <label style="color: black; text-shadow: none;"><b>Message:</b></label><br>
+      <textarea name="message" rows="5" cols="40" required style="margin-bottom: 10px;"></textarea><br>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </center>
+
+  <div id="footer-placeholder"></div>
+  <script src="scripts/footer.js"></script>
+
+</body>
+</html>
